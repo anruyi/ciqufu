@@ -1,0 +1,25 @@
+body {}
+
+.Msg-body,
+.header-body,
+.photoBox-body,
+.nav-body {
+    margin-left: 0;
+    margin-right: 0;
+    /*padding: 20px;*/
+    background-color: #eee;
+    color: #fff;
+    border: 1px solid red;
+}
+
+.header-body {
+    width: 100px;
+}
+
+.photoBox-body {
+    margin-left: 0;
+    margin-right: 0;
+    /*width: 200px;*/
+    color: #ccc;
+    border: 2px solid red;
+}

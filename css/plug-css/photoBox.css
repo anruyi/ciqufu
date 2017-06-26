@@ -1,0 +1,77 @@
+.photoBox-body {
+    height: 276px;
+    margin-bottom: 10px;
+}
+
+.photoBox-body ul {
+    list-style: none;
+    margin: 0;
+    height: 100%;
+    padding-left: 50%;
+}
+
+.photoBox-body ul li {
+    width: 50%;
+    object-fit: cover;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.photoBox-body ul li a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+    height: 128px;
+}
+
+.photoBox-body ul li:first-child a {
+    height: 266px;
+    margin-left: 0;
+}
+
+.photoBox-body ul li h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 10px 0;
+    height: 41px;
+    overflow: hidden;
+    background-color: #656565;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    margin: 0;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.photoBox-body li.large-li {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-left: -100%;
+}
+
+.photoBox-body li.large-li h4 {
+    font-size: 16px;
+    line-height: 34px;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    /*float: left;*/
+}
+
+ul li a img:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+ul li a h4:hover {
+    background-color: #428bca;
+    transition: .5s;
+}

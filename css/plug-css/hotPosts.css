@@ -1,0 +1,37 @@
+.hotPosts-body {}
+
+.hotPosts-body h3 {
+    padding: 20px 20px 0 20px;
+}
+
+.hotPosts-body h3 strong {
+    border-bottom: 2px solid #76bdff;
+    font-size: 20px;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.hotPosts-body ul {
+    padding: 15px 20px;
+}
+
+.hotPosts-body ul li {
+    padding-bottom: 10px;
+}
+
+.hotPosts-body ul li a {
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.hotPosts-body ul li p {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.hotPosts-body ul li>span {
+    margin-right: 8px;
+    padding: 0px 10px;
+    background-color: #fd8c84;
+}
