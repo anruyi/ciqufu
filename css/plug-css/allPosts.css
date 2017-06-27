@@ -1,0 +1,111 @@
+.allPosts-body {
+}
+
+.allPosts-body {
+	margin: 20px 0;
+}
+
+.allPosts-body h3 small {
+	float: right;
+	line-height: 32px;
+	font-size: 65%;
+	font-weight: normal;
+	color: #999;
+}
+
+.allPosts-body h3 strong {
+	border-bottom: solid 2px #76bdff;
+	line-height: 32px;
+	color: #333;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.allPosts-body h3 {
+	padding: 20px 20px 0;
+	background-color: #fff;
+}
+
+.allPosts-body .excerpt {	
+	padding: 20px;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+}
+
+.allPosts-body .excerpt .tag {
+	color: #fff;
+	padding: 1px 3px;
+	float: left;
+	background-color: #76bdff;
+}
+
+.allPosts-body .excerpt .triangle {
+	display: inline-block;
+	/*margin: auto 0;*/
+	width: 0px;
+	height: 0px;
+	position: relative;
+	top:7px;
+	/*right: -4px;*/
+	border-left: 4px solid #76bdff;;
+	border-bottom: 4px solid #fff;
+	border-top: 4px solid #fff;
+	float: left;
+	padding-left: 5px;
+	/*background-color: #76bdff;*/
+}
+
+.allPosts-body .excerpt h2 {
+	padding-bottom: 10px;
+	color: #555;
+	font-size: 22px;
+	line-height: 25px;
+	font-weight: normal;
+}
+
+.allPosts-body .excerpt .note {
+	color: #777;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 10px;
+	margin-right: 25%;
+}
+
+.allPosts-body .excerpt .right-content{
+	/*display: block;*/
+	height: 132px;
+	/*margin-right: -75%;*/
+	margin-top: -0px;
+	float: right;
+}
+
+.allPosts-body .excerpt img {
+	height: 132px;
+	max-width: 220px;
+}
+
+.allPosts-body .excerpt .authortime , 
+.allPosts-body .excerpt .tail-info span{
+	font-size: 12px;
+	margin-bottom: 10px;
+	color: #999;
+}
+
+.allPosts-body .excerpt .tail-info {
+	margin-right: 25%;
+	clear: both;
+}
+
+.allPosts-body .excerpt .tail-info::after {
+	
+}
+
+.allPosts-body .excerpt .tail-info .psot-targs {
+	/*float: right;*/
+}
+
+@media screen and (max-width: 520px) {
+    .allPosts-body {
+    	margin: 0;
+    }
+}

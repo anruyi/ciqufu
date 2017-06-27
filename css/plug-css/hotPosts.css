@@ -1,5 +1,9 @@
 .hotPosts-body {}
 
+.hotPosts-body {
+	background-color: #fff;
+}
+
 .hotPosts-body h3 {
     padding: 20px 20px 0 20px;
 }

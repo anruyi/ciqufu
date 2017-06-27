@@ -15,7 +15,7 @@ body {
 iframe {
     width: 100%;
     height: 100%;
-    border: 1px dashed yellow;
+    border: 0px dashed yellow;
 }
 
 
@@ -55,7 +55,7 @@ iframe {
 }
 
 .main-content .content-all iframe {
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 
@@ -119,10 +119,19 @@ iframe {
     .main-header {
         display: none;
     }
-}
-
-@media screen and (max-width: 720px) {
     .mb-header {
         display: block;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    
+    .main-content .content-all iframe[src="page/content-photoBox.html"] ,
+    .main-content .content-all iframe[src="page/content-hotPosts.html"] {
+    	display: none;
+    }
+    .main-content .content-all {
+    	margin: 0;
+    	padding: 0;
     }
 }
