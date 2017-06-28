@@ -28,7 +28,6 @@ iframe {
     bottom: 0;
     overflow: hidden;
     background-color: #fff;
-    border: 1px solid #111;
 }
 
 .mb-header {
@@ -64,16 +63,16 @@ iframe {
 .main-aside {
     margin-left: -310px;
     width: 300px;
-    height: 800px;
     float: left;
     /*background-color: #fff;*/
-    border: 1px solid #111;
 }
 
 .main-aside iframe {
     width: 300px;
-    height: auto;
+    height: 460px;
     background-color: #fff;
+    /*padding-top: 20px;*/
+   margin-top: 20px;
 }
 
 
@@ -88,12 +87,17 @@ iframe {
     position: relative;
     margin-left: 215px;
     margin-right: 20px;
-    background-color: #fff;
-    border: 1px solid #111;
+    padding: 20px 0 60px;
 }
 
 .main-footer ul li {
     float: left;
+    
+}
+
+.main-footer ul li a , .main-footer a{
+	color: #aaa;
+	font-size: 12px;
 }
 
 @media screen and (max-width: 1026px) {

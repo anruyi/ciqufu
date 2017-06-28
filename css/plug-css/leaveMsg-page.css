@@ -1,0 +1,37 @@
+.leaveMsg-body {
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+
+.leaveMsg-body h3 strong {
+	border-bottom: 2px solid #76bdff;
+}
+
+.leaveMsg-body ul li {
+	
+}
+
+.leaveMsg-body ul li a {
+	display: block;
+    padding: 10px 0 10px 46px;
+    color: #666;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.leaveMsg-body ul li a img {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin-left: -46px;
+	bottom: -8px;
+	position: relative;
+	/*float: left;*/
+}
+
+.leaveMsg-body ul li a span {
+	position: relative;
+	bottom: 15px;
+	left: 7px;
+	color: #999;
+}

@@ -1,0 +1,21 @@
+.frindsLinks-body {
+	padding: 15px 20px;
+	margin-bottom: 20px;	
+}
+
+.frindsLinks-body h3 strong {
+	border-bottom: 2px solid #76bdff;
+}
+
+.frindsLinks-body ul li {
+	display: inline-block;
+	width: 50%;
+	line-height: 32px;
+	float: left;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.frindsLinks-body ul li a {
+	color: #444;
+}

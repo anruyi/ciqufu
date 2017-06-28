@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <div class="hotPosts-body">
-        <h3>
+    <div class="hotPosts-body" id="hotPsots">
+        <h3 onclick="btnClick()">
             <strong>一周热评榜</strong>
         </h3>
         <ul>
@@ -44,6 +44,15 @@
             </li>
         </ul>
     </div>
+    <script type="text/javascript">
+    	function child(){
+    		alert("hello,I am child!");
+    	}
+    	function btnClick() {
+          window.parent.parent();
+      	}
+    	
+    </script>
 </body>
 
 </html>

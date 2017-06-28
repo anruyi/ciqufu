@@ -6,6 +6,7 @@
     <title>词曲赋</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -20,20 +21,22 @@
     <!--Body content部分，models-->
     <div class="main-content">
         <div class="content-all">
-            <iframe src="page/content-photoBox.html" style="height:286px" class="photoBox" scrolling="no"></iframe>
-            <iframe src="page/content-hotPosts.html" style="height:234px" class="hotPosts" scrolling="no"></iframe>
-			<iframe id="allPsots" src="page/content-allPosts.html"></iframe>
+            <iframe id="iframe-photoBox" src="page/content-photoBox.html" style="height:286px" class="photoBox" scrolling="no"></iframe>
+            <iframe id="iframe-hotPhsts" src="page/content-hotPosts.html" style="height:234px" class="hotPosts" scrolling="no"></iframe>
+			<iframe id="iframe-allPsots" onload="setHeight('iframe-allPsots')" src="page/content-allPosts.html" ></iframe>
+			<iframe id="iframe-article" src="page/content-article.html" width="" height=""></iframe>
         </div>
     </div>
 
     <!--aside部分，小插件-->
     <aside class="main-aside">
         <iframe src="page/aside-leaveMsg.html" frameborder="0" ></iframe>
-        <iframe src="page/aside-vistor.html" frameborder="0"  frameborder=no></iframe>
-        
+        <!--<iframe src="page/aside-vistor.html" frameborder="0"  frameborder=no></iframe>-->
+        <iframe id="iframe-leaveMsg" onload="setHeight('iframe-leaveMsg')" src="page/aside-frindsLinks.html" scrolling="no" style="height: 550px;"></iframe>
     </aside>
-        <!--Footer部分，About me-->
-        <footer class="main-footer">
+    <!--Footer部分，About me-->
+    <div id="test" style="width: 20px;">hello</div>
+    <footer class="main-footer" id="footer">
         <a>赣ICP备17003479号-1</a>
         <ul>
             <li><a href="http://ciqufu.com/">360|</a></li>
@@ -41,21 +44,17 @@
             <li><a href="http://ciqufu.com/">统计|</a></li>
             <li><a href="http://ciqufu.com/">登陆</a></li>
         </ul>
-        <!--<a>-</a>-->
-       </footer>
-        <script type="text/javascript">
-        var iframe = document.getElementById("allPsots");
-        var postsHeight = 0;
-		function reinitIframe(){
-//			console.log(iframe.contentWindow.document.documentElement.scrollHeight+"px");
-			return iframe.contentWindow.document.documentElement.scrollHeight+"px";
+    </footer>
+    <script type="text/javascript">   
+		function setHeight(idName){
+			var iframe = document.getElementById(idName).contentWindow.document.documentElement.scrollHeight;
+			var heightStr = iframe+"px";
+			console.log(" "+heightStr);
+			document.getElementById(idName).style.height = heightStr.toString();
+			console.log(" "+document.getElementById(idName).style.height);
 		}
-		window.onload=function(){
-			reinitIframe();
-			iframe.style.height = reinitIframe().toString();
-		}   
-		
-		</script>
+	</script>
+
 </body>
 
 </html>
