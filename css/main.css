@@ -90,14 +90,24 @@ iframe {
     padding: 20px 0 60px;
 }
 
+.main-footer a:hover{
+	color: red;
+	cursor:help;
+}
+
 .main-footer ul li {
     float: left;
-    
+
 }
 
 .main-footer ul li a , .main-footer a{
 	color: #aaa;
 	font-size: 12px;
+}
+
+.main-footer ul li a:hover {
+	color: red;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 1026px) {

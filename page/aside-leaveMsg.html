@@ -16,31 +16,31 @@
         <h3><strong>最近留言</strong></h3>
         <ul>
         	<li>
-        		<a href="">
+        		<a href="#">
         			<img src="../img/h.jpg" alt="" />
         			<span>&nbsp;&nbsp;05月17日 22:14说：<br>05有点烦，有点</span>
         		</a>
         	</li>
         	<li>
-        		<a href="">
+        		<a href="#">
         			<img src="../img/h.jpg" alt="" />
         			<span>&nbsp;&nbsp;05月17日 22:14说：<br>05有点烦，有点</span>
         		</a>
         	</li>
         	<li>
-        		<a href="">
+        		<a href="#">
         			<img src="../img/h.jpg" alt="" />
         			<span>&nbsp;&nbsp;05月17日 22:14说：<br>05有点烦，有点</span>
         		</a>
         	</li>
         	<li>
-        		<a href="">
+        		<a href="#">
         			<img src="../img/h.jpg" alt="" />
         			<span>&nbsp;&nbsp;05月17日 22:14说：<br>05有点烦，有点</span>
         		</a>
         	</li>
         	<li>
-        		<a href="">
+        		<a href="#">
         			<img src="../img/h.jpg" alt="" />
         			<span>&nbsp;&nbsp;05月17日 22:14说：<br>05有点烦，有点</span>
         		</a>
@@ -48,5 +48,12 @@
         </ul>
     </div>
 </body>
-
+<script type="text/javascript">
+	var a = document.getElementsByTagName("a");
+	for(var i=0;i<a.length;i++){
+		a[i].onclick=function(){
+			window.parent.more();
+		}
+	}
+</script>
 </html>

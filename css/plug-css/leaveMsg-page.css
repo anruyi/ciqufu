@@ -2,6 +2,10 @@
 	padding: 15px 20px;
 	margin-bottom: 20px;
 }
+.leaveMsg-body h3:hover {
+	color: #76bdff;
+	cursor: pointer;
+}
 
 .leaveMsg-body h3 strong {
 	border-bottom: 2px solid #76bdff;
@@ -17,6 +21,12 @@
     color: #666;
     font-size: 12px;
     border-bottom: 1px solid #eee;
+}
+
+.leaveMsg-body ul li a:hover {
+	color: #000;
+	background: linear-gradient(to top, rgba(0,0,0,.05) , rgba(0,0,0,.01));
+	
 }
 
 .leaveMsg-body ul li a img {

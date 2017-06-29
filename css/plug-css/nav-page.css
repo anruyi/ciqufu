@@ -16,6 +16,21 @@
 	background-color: #fff;
 }
 
+/*.nav-body nav ul li:hover{
+	cursor: pointer;
+	color: red;
+	background-color: red;
+}*/
+#tab li:hover {
+	/*background-color: red;*/
+	cursor: pointer;
+	background: linear-gradient(to top, rgba(255,207,192,.05) , rgba(255,207,192,.01));
+}
+
+#tab li a:hover{
+	color: #76bdff;
+}
+
 .nav-body .nav li a {
 	display: block;
 	padding: 12px 25px;
@@ -33,4 +48,8 @@
 	text-align: center;
 	margin: 0 5px;
 	font-size: 12px;
+}
+
+.nav-body .links a:hover{
+	color: #ccc;
 }

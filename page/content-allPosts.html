@@ -20,7 +20,7 @@
 		<article class="excerpt excerpt-c">
 			<header>
 				<a class="tag" href="#">文章长赋</a><i class="triangle"></i>
-				<h2>倾诉-任明信-文字心语</h2>
+				<h2 onclick="learnMore()">倾诉-任明信-文字心语</h2>
 			</header>
 			<p class="right-content"><a href=""><img src="../img/h.jpg" alt="" /></a></p>
 			<p class="authortime">管理员 发布于 1天前</p>
@@ -101,6 +101,7 @@
 				<span class="psot-targs">标签：回到最初 /彩虹/爱情</span>  
 			</p>			
 		</article>
+		
 		<article class="excerpt excerpt-a">
 			<header>
 				<a class="tag" href="#">歌曲欣赏</a><i class="triangle"></i>
@@ -171,7 +172,7 @@
     			excerptA[i].style.display = "block";
     			excerptB[i].style.display = "none";
     			excerptC[i].style.display = "none";
-    		}a
+    		}
     		console.log("disA!");
     	}
     	function disB(){
@@ -194,9 +195,42 @@
     			excerptA[i].style.display = "none";
     		}
     	}
-    	window.onload = function(){
-//  		disA();
+    	function disAll(){
+    		var excerptA = document.getElementsByClassName("excerpt-a"); //歌曲
+    		var excerptB = document.getElementsByClassName("excerpt-b"); //诗词
+    		var excerptC = document.getElementsByClassName("excerpt-c"); //文章
+    		for(var i=0;i<excerptA.length;i++){
+    			excerptC[i].style.display = "block";
+    			excerptB[i].style.display = "block";
+    			excerptA[i].style.display = "block";
+    		}
     	}
+    	function disNone(){
+    		var excerptA = document.getElementsByClassName("excerpt-a"); //歌曲
+    		var excerptB = document.getElementsByClassName("excerpt-b"); //诗词
+    		var excerptC = document.getElementsByClassName("excerpt-c"); //文章
+    		for(var i=0;i<excerptA.length||i<excerptB.length||i<excerptC.length;i++){
+    			excerptC[i].style.display = "none";
+    			excerptB[i].style.display = "none";
+    			excerptA[i].style.display = "none";
+    		}
+    	}
+    	window.onload = function(){
+    		var allArticle =  document.getElementsByTagName("h2");
+    		for(var i=0;i<allArticle.length;i++){
+    			allArticle[i].onclick = function(){
+    				console.log("to his father!");
+    				window.parent.more();
+    			}
+    		}
+    	}
+    	function learnMore(){
+    		console.log("to his father!");
+    		window.parent.more();
+    	}
+    	
+    	
+    	
     </script>
 </body>
 

@@ -21,6 +21,17 @@
 	font-size: 20px;
 }
 
+.allPosts-body h3 strong:hover {
+	color: #76bdff;
+	cursor: pointer;
+}
+
+.allPosts-body h3 small:hover {
+	color: #777;
+	cursor: pointer;
+}
+
+
 .allPosts-body h3 {
 	padding: 20px 20px 0;
 	background-color: #fff;
@@ -63,12 +74,22 @@
 	font-weight: normal;
 }
 
+.allPosts-body .excerpt h2:hover {
+	color: #76bdff;
+	cursor: pointer;
+}
+
 .allPosts-body .excerpt .note {
 	color: #777;
 	font-size: 14px;
 	line-height: 22px;
 	margin-bottom: 10px;
 	margin-right: 25%;
+}
+
+.allPosts-body .excerpt .note:hover {
+	color: #999;
+	cursor: pointer;
 }
 
 .allPosts-body .excerpt .right-content{
